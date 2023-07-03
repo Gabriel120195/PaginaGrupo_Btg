@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./css/cores.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.css" rel="stylesheet" />
+  <title>Document</title>
+</head>
+
+<body class="azulEscuroBtg">
+
+  <nav class="navbar navbar-expand-lg navbar-light corNavbar">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <a class="navbar-brand mt-2 mt-lg-0" href="https://asidbrasil.org.br/br/" target="_blank">
+          <img src="./imagens/LogoGrupo.jpg" height="50" alt="Logo Asid" loading="lazy" />
+          <p class="me-5">Grupo Aprendendo a ser Dev</p>
+        <a class="navbar-brand mt-2 mt-lg-0" href="https://asidbrasil.org.br/br/" target="_blank">
+          <img src="./imagens/LogoAsid.png" height="50" alt="Logo Asid" loading="lazy" />
+        </a>
+        <a class="navbar-brand mt-2 ms-5 mt-lg-0" href="https://www.alura.com.br/" target="_blank">
+          <img src="./imagens/alura.jpg" height="50" alt="Logo Alura" loading="lazy" />
+        </a>
+        <a class="navbar-brand mt-2 ms-5 mt-lg-0" href="https://www.btgpactualdigital.com/" target="_blank">
+          <img src="./imagens/btg-pactual.svg" height="50" alt="Logo Btg" loading="lazy" />
+        </a>
+      </div>
+    </div>
+
+  </nav>
+  <div class="me-5 ms-5 mt-3">
+    <h1 class="text-center">Jornada Tech - Parceria para Capacitação de Pessoas com Deficiência</h1>
+    <p class="text-center ">Conhece a Jornada Tech? Junte-se a nós nesta caminhada!</p>
+
+    <div id="carouselExampleIndicators" class="carousel slide mx-1" data-mdb-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-mdb-target="#carouselExampleIndicators" data-mdb-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-mdb-target="#carouselExampleIndicators" data-mdb-slide-to="1"
+          aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./imagens/img01.jpg" height="700px" width="700px" class="d-block w-100" alt="Imagem do encontro jornadaTech" />
+        </div>
+        <div class="carousel-item">
+          <img src="./imagens/img03.jpg" height="700px" width="700px" class="d-block w-100" alt="Imagem do encontro jornadaTech" />
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleIndicators"
+        data-mdb-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleIndicators"
+        data-mdb-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="mx-1 mt-3 text-center">
+      <div>
+        <h2>Parceiros</h2>
+        <p>Faça o Quiz e descubra se você sabe quais são os principais parceiros da Jornada Tech?</p>
+        <button onclick="verificarParceiros()" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">Responder Quiz</button>
+        <button onclick="mostrarMensagem()" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">Texto sobre Jornada Tech</button>
+      </div>
+
+      <div id="mensagem" style="display: none;">
+        <hr>
+        <h2>Responsabilidade Social</h2>
+        <p>O BTG Pactual, a ONG Asid e a escola de tecnologia Alura criaram uma parceria grandiosa para capacitar
+          pessoas com deficiência e inseri-las no mercado de trabalho da área de tecnologia. O projeto piloto, chamado
+          de Jornada Tech, tem o objetivo de aumentar o número de profissionais com deficiência na área, que
+          atualmente é baixo. As 25 pessoas contempladas pelo projeto estão muito gratas pela oportunidade que lhes
+          foi dada e acreditam que esta iniciativa pioneira irá melhorar essa realidade em um curto espaço de tempo.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="corRodapeNomes text-white text-center text-lg-start mt-3">
+    <p class="text-center p-3">Redes Sociais</p>
+
+    <div class="container mb-1">
+      <div class="row text-center">
+        <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-1">Daniela</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="https://www.linkedin.com/" class="text-white" target="_blank">Linkedin</a>
+            </li>
+            <li>
+              <a href="https://github.com/" class="text-white" target="_blank">GitHub</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-0">Deize</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="https://www.linkedin.com/" class="text-white" target="_blank">Linkedin</a>
+            </li>
+            <li>
+              <a href="https://github.com/" class="text-white" target="_blank">GitHub</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-1 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-0">Gabriel</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="https://www.linkedin.com/" class="text-white" target="_blank">Linkedin</a>
+            </li>
+            <li>
+              <a href="https://github.com/" class="text-white" target="_blank">GitHub</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-0">Larissa</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="https://www.linkedin.com/" class="text-white" target="_blank">Linkedin</a>
+            </li>
+            <li>
+              <a href="https://github.com/" class="text-white" target="_blank">GitHub</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-0">Mari</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="https://www.linkedin.com/" class="text-white" target="_blank">Linkedin</a>
+            </li>
+            <li>
+              <a href="https://github.com/" class="text-white" target="_blank">GitHub</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-0">Ugo</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="https://www.linkedin.com/" class="text-white" target="_blank">Linkedin</a>
+            </li>
+            <li>
+              <a href="https://github.com/" class="text-white" target="_blank">GitHub</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023
+    </div>
+  </footer>
+
+
+  <script type="text/javascript">
+    function mostrarMensagem() {
+      document.getElementById("mensagem").style.display = "block";
+    }
+
+    function verificarParceiros() {
+      let resposta1 = prompt("Qual o maior banco de investimentos da América Latina?").toLowerCase();
+      let resposta2 = prompt("Principal ONG de ação social para igualdade das diferenças?").toLowerCase();
+      let resposta3 = prompt("Maior escola online de tecnologia do país?").toLowerCase();
+      let resposta4 = prompt("Desenvolvemos talentos para transformar vidas?").toLowerCase();
+      let resposta5 = prompt("Instituto de Tecnologia e Liderança?").toLowerCase();
+      let validar1 = resposta1 === "btg";
+      let validar2 = resposta2 === "asid";
+      let validar3 = resposta3 === "alura";
+      let validar4 = resposta4 === "cia de talentos";
+      let validar5 = resposta5 === "inteli";
+      let totalCorretos = 0;
+      if (validar1) {
+        totalCorretos += 1;
+      }
+      if (validar2) {
+        totalCorretos += 1;
+      }
+      if (validar3) {
+        totalCorretos += 1;
+      }
+      if (validar4) {
+        totalCorretos += 1;
+      }
+      if (validar5) {
+        totalCorretos += 1;
+      }
+      if (totalCorretos === 5) {
+        alert("Parabéns! Você acertou todas as questões, você é sensacional!");
+      } else if (totalCorretos === 4) {
+        alert("Incrível! Você acertou 4 de 5, só faltou um pouquinho para acertar todas!");
+      } else if (totalCorretos === 3) {
+        alert("Ótimo desempenho! Você acertou 3 de 5, continue se esforçando!");
+      } else if (totalCorretos === 2) {
+        alert("Muito bem! Você acertou 2 de 5, continue estudando para melhorar ainda mais!");
+      } else if (totalCorretos === 1) {
+        alert("Você acertou 1 de 5, continue estudando e tente novamente!");
+      } else {
+        alert("Que pena! Você errou todas as respostas. Mas, não desista! Estude mais um pouco e volte aqui!");
+      }
+    }
+  </script>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.js"></script>
+</body>
+
+</html>
